@@ -95,7 +95,7 @@ body{
     }
 }
 
-#popWrap{ /*  팝업이 뜨는 위치 */
+#popWrap{
     position: absolute;
     left: 395px;
     top: 350px;
@@ -263,8 +263,6 @@ body{
                         position: relative;
                         left: 15%;
                         top: 31px;
-/*                         margin-left: 15%;
-                        margin-top: 31px; */
                         overflow: hidden;
                         &.up{
                              height: 300px;
@@ -292,7 +290,6 @@ body{
                             height: 90px;
                             line-height: 58px;
                             box-sizing: border-box;
-                            /* transition: all .4s; */
                             a{
                                 font-size: $size-big;
                                 font-weight: $weight-bold;
@@ -393,12 +390,13 @@ body{
                     @include flex-column();
                     position: absolute;
                     left: 0;
+                    top: 5px;
                     transition: all .4s;
                     cursor: pointer;
                     span{
                         display: block;
                         text-indent: -9999px;
-                        width: 60px;
+                        width: 45px;
                         height: 5px;
                         background-color: #2d2d2d;
                         position: absolute;
@@ -409,10 +407,10 @@ body{
                             top: 0;
                         }
                         &.sec{
-                            top: 20px;
+                            top: 15px;
                         }
                         &.thi{
-                            top: 40px;
+                            top: 30px;
                         }   
                     }
                     &.open{
@@ -1122,7 +1120,7 @@ body{
                                 font-size: 2.3em;
                                 font-weight: $weight-semi_bold;
                                 text-align: center;
-                                margin: 50px 0 100px;
+                                margin: 100px 0 50px;
                                 font-family: 'Song Myung', serif;
                                 letter-spacing: 5px;
                             }
